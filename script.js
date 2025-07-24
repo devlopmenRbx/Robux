@@ -1,23 +1,4 @@
-// Smooth scrolling function
-function scrollToPackages() {
-    document.getElementById('packages').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-
-// Package purchase functionality
-document.addEventListener('DOMContentLoaded', function() {
-    // Add click event to all package buttons
-    const packageButtons = document.querySelectorAll('.package-btn');
-
-    packageButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            // Get package info
-        const packageCard = this.closest('.package-card');
-        const packageName = packageCard.querySelector('h3').textContent;
-        const packagePrice = packageCard.querySelector('.price').textContent;
+kageCard.querySelector('.price').textContent;
 
         // Determine delivery type
         const isInstant = packageCard.querySelector('.instant-badge');
