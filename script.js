@@ -285,7 +285,7 @@ function showPurchaseForm(packageName, packagePrice, deliveryType) {
                        `💳 Pembayaran: ${payment}\n\n` +
                        `Mohon diproses ya! Terima kasih 😊`;
 
-        const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/6288210938143‬?text=${encodeURIComponent(message)}`;
 
         // Open WhatsApp
         window.open(whatsappUrl, '_blank');
