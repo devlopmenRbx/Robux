@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboTop - Topup Roblox Murah & Cepat</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-gamepad"></i>
+                <span>RoboTop</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#packages">Paket Robux</a></li>
+                <li><a href="#how-to">Cara Order</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Topup Roblox <span class="highlight">Termurah</span></h1>
+                <p>Dapatkan Robux dengan harga terbaik! Proses cepat, aman, dan terpercaya.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span>10,000+ Pelanggan</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>Proses 1-5 Menit</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Aman</span>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="scrollToPackages()">
+                    <i class="fas fa-shopping-cart"></i>
+                    Beli Sekarang
+                </button>
+            </div>
+            <div class="hero-character">
+                <div class="roblox-character main-character">
+                    <div class="character-head"></div>
+                    <div class="character-body"></div>
+                    <div class="character-arm left"></div>
+                    <div class="character-arm right"></div>
+                    <div class="character-leg left"></div>
+                    <div class="character-leg right"></div>
+                </div>
+
+                <div class="mini-character character-1">
+                    <div class="mini-head"></div>
+                    <div class="mini-body"></div>
+                </div>
+
+                <div class="mini-character character-2">
+                    <div class="mini-head"></div>
+                    <div class="mini-body"></div>
+                </div>
+
+                <div class="floating-robux">
+                    <span>ROBUX</span>
+                </div>
+
+                <div class="floating-coins">
+                    <div class="coin">💰</div>
+                    <div class="coin">💎</div>
+                    <div class="coin">⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2>Paket Robux Terbaik</h2>
+            <p class="section-subtitle">Pilih paket yang sesuai dengan kebutuhan kamu!</p>
+
+            <!-- Package Categories -->
+            <div class="package-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" onclick="showPackages('instant')">
+                        <i class="fas fa-bolt"></i> Paket Instan
+                    </button>
+                    <button class="tab-btn" onclick="showPackages('economy')">
+                        <i class="fas fa-calendar-alt"></i> Paket Ekonomis (5 Hari)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Instant Packages -->
+            <div id="instant-packages" class="packages-grid active">
+                <div class="package-card">
+                    <div class="instant-badge">⚡ INSTAN</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>100 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 19,000</span>
+                        <span class="original-price">Rp 25,000</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Proses 1-5 Menit</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <button class="package-btn instant-btn">Beli Instan</button>
+                </div>
+
+                <div class="package-card popular">
+                    <div class="popular-badge">TERPOPULER</div>
+                    <div class="instant-badge">⚡ INSTAN</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>400 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 75,000</span>
+                        <span class="original-price">Rp 95,000</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Proses 1-5 Menit</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 20 Robux</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    <button class="package-btn instant-btn">Beli Instan</button>
+                </div>
+
+                <div class="package-card">
+                    <div class="instant-badge">⚡ INSTAN</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>800 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 140,000</span>
+                        <span class="original-price">Rp 180,000</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Proses 1-5 Menit</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 50 Robux</li>
+                    </ul>
+                    <button class="package-btn instant-btn">Beli Instan</button>
+                </div>
+
+                <div class="package-card">
+                    <div class="instant-badge">⚡ INSTAN</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>1700 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 280,000</span>
+                        <span class="original-price">Rp 350,000</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Proses 1-5 Menit</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 100 Robux</li>
+                    </ul>
+                    <button class="package-btn instant-btn">Beli Instan</button>
+                </div>
+            </div>
+
+            <!-- Economy Packages (5 Days) -->
+            <div id="economy-packages" class="packages-grid">
+                <!-- Price List Header -->
+                <div class="price-list-header">
+                    <h3>💰 PAKET EKONOMIS - PROSES 1-5 HARI</h3>
+                    <p>Hemat lebih banyak dengan paket ekonomis! Harga termurah se-Indonesia 🎯</p>
+                </div>
+
+                <!-- Small Packages -->
+                <div class="package-card economy small">
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>100 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 15,000</span>
+                        <span class="original-price">Rp 18,000</span>
+                        <div class="savings">Hemat 33%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Harga Termurah</li>
+                    </ul>
+                    <button class="package-btn economy-btn">Beli Ekonomis</button>
+                </div>
+
+                <div class="package-card economy small">
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>160 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 22,000</span>
+                        <span class="original-price">Rp 32,000</span>
+                        <div class="savings">Hemat 31%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 10 Robux</li>
+                    </ul>
+                    <button class="package-btn economy-btn">Beli Ekonomis</button>
+                </div>
+
+                <div class="package-card economy medium popular">
+                    <div class="popular-badge">TERPOPULER</div>
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>400 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 50,000</span>
+                        <span class="original-price">Rp 75,000</span>
+                        <div class="savings">Hemat 33%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 30 Robux</li>
+                        <li><i class="fas fa-check"></i> Harga Termurah</li>
+                    </ul>
+                    <button class="package-btn economy-btn">Beli Ekonomis</button>
+                </div>
+
+                <div class="package-card economy medium">
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>800 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 90,000</span>
+                        <span class="original-price">Rp 140,000</span>
+                        <div class="savings">Hemat 36%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 80 Robux</li>
+                    </ul>
+                    <button class="package-btn economy-btn">Beli Ekonomis</button>
+                </div>
+
+                <div class="package-card economy large">
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="bestseller-tag">BEST SELLER</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>1700 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 180,000</span>
+                        <span class="original-price">Rp 280,000</span>
+                        <div class="savings">Hemat 36%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 200 Robux</li>
+                    </ul>
+                    <button class="package-btn economy-btn">Beli Ekonomis</button>
+                </div>
+
+                <div class="package-card economy large">
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>4500 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 450,000</span>
+                        <span class="original-price">Rp 700,000</span>
+                        <div class="savings">Hemat 36%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 500 Robux</li>
+                        <li><i class="fas fa-star"></i> Premium Support</li>
+                    </ul>
+                    <button class="package-btn economy-btn">Beli Ekonomis</button>
+                </div>
+
+                <div class="package-card economy premium">
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="premium-tag">🔥 PREMIUM</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>10,000 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 950,000</span>
+                        <span class="original-price">Rp 1,500,000</span>
+                        <div class="savings">Hemat 37%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 1,200 Robux</li>
+                        <li><i class="fas fa-star"></i> Premium Support</li>
+                        <li><i class="fas fa-gift"></i> Free Avatar Items</li>
+                    </ul>
+                    <button class="package-btn economy-btn premium-btn">Beli Premium</button>
+                </div>
+
+                <div class="package-card economy mega">
+                    <div class="economy-badge">💰 HEMAT</div>
+                    <div class="mega-tag">⚡ MEGA DEAL</div>
+                    <div class="package-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>22,500 Robux</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 2,000,000</span>
+                        <span class="original-price">Rp 3,200,000</span>
+                        <div class="savings">Hemat 38%!</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-clock"></i> Proses 1-5 Hari</li>
+                        <li><i class="fas fa-check"></i> Garansi 100%</li>
+                        <li><i class="fas fa-check"></i> No Banned</li>
+                        <li><i class="fas fa-check"></i> Bonus Extra 3,000 Robux</li>
+                        <li><i class="fas fa-star"></i> VIP Support</li>
+                        <li><i class="fas fa-gift"></i> Free Premium Avatar</li>
+                        <li><i class="fas fa-crown"></i> Exclusive Items</li>
+                    </ul>
+                    <button class="package-btn economy-btn mega-btn">Beli Mega Deal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Section -->
+    <section id="how-to" class="how-to">
+        <div class="container">
+            <h2>Cara Order Mudah</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Pilih Paket</h3>
+                        <p>Pilih paket Robux sesuai kebutuhan</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Input Username</h3>
+                        <p>Masukkan username Roblox kamu</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Bayar</h3>
+                        <p>Lakukan pembayaran melalui metode yang tersedia</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Selesai</h3>
+                        <p>Robux akan masuk dalam 1-5 menit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+62 812-3456-7890</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-telegram"></i>
+                    <h3>Telegram</h3>
+                    <p>@robotop_support</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-discord"></i>
+                    <h3>Discord</h3>
+                    <p>RoboTop#1234</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-gamepad"></i>
+                    <span>RoboTop</span>
+                    <p>Topup Roblox terpercaya dan termurah di Indonesia</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#packages">Paket</a></li>
+                        <li><a href="#how-to">Cara Order</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom"> 
+                <p>&copy; 2024 RoboTop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
